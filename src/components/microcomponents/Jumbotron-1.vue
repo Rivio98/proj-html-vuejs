@@ -11,9 +11,11 @@ export default {
                 <p class="py-3">Welcome To Our Movie Site</p>
                 <h2>OUR SPECIAL <span class="txt-green">MOVIES</span></h2>
                 <div class="d-flex justify-content-center">
-                    <p class="text-center w-25">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quam
+                    <p class="text-center w-25">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+                        quam
                         sapiente, nemo cum dolores
-                        aut maiores esse magni eius ipsa! Deleniti tenetur sint natus tempora adipisci hic reprehenderit
+                        aut maiores esse magni eius ipsa! Deleniti tenetur sint natus tempora adipisci hic
+                        reprehenderit
                         labore libero.</p>
                 </div>
                 <button type="button" class="button-green rounded-5">Read More</button>
@@ -27,10 +29,14 @@ export default {
     background-size: cover;
     height: 650px;
     align-content: center;
-}
 
-.button-green {
-    padding: 5px 20px;
-    margin-top: 20px;
+    .content {
+        margin-left: 300px;
+
+        .button-green {
+            padding: 5px 20px;
+            margin-top: 20px;
+        }
+    }
 }
 </style>

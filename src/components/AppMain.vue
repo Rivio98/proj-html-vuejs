@@ -1,17 +1,18 @@
 <script>
-import AppCard from './microcomponents/AppCard.vue';
 import Jumbotron1 from './microcomponents/Jumbotron-1.vue';
+import Card1 from './microcomponents/Card-1.vue';
 
 export default {
     components: {
-        AppCard,
-        Jumbotron1
+        Jumbotron1,
+        Card1
+
     },
 }
 </script>
 <template>
     <Jumbotron1 />
-    <AppCard />
+    <Card1 />
 </template>
 
 <style lang="">
