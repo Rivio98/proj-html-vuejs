@@ -1,5 +1,5 @@
 <script>
-import AppMenu from './AppMenu.vue';
+import AppMenu from './microcomponents/AppMenu.vue';
 import { store } from '../store';
 
 export default {
@@ -51,7 +51,7 @@ export default {
                     <div class="search-container justify-content-end">
                         <div>
                             <input placeholder="Search.." />
-                            <button class="text-light">Search</button>
+                            <button class="text-light button-green">Search</button>
                         </div>
                     </div>
                 </div>
@@ -103,16 +103,6 @@ export default {
     border-bottom: 1px solid rgba(106, 104, 104, 0.388);
     border-right: 0px;
     border-left: 0px;
-}
-
-.search-container button {
-    padding: 11px 15px;
-    border: none;
-    background-color: #13BE13;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
 }
 
 
