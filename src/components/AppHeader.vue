@@ -51,7 +51,7 @@ export default {
                     <div class="search-container justify-content-end">
                         <div>
                             <input placeholder="Search.." />
-                            <button class="text-light button-green">Search</button>
+                            <button class="button-green">Search</button>
                         </div>
                     </div>
                 </div>
@@ -60,25 +60,23 @@ export default {
     </div>
     <hr class="divider">
     <div class="container">
-        <div class="row py-4">
+        <div class="row align-items-center py-1">
             <div class="col-10">
-                <div class="content text-light ">
-                    <ul class="list-unstyled d-flex">
-
+                <div class="content text-light">
+                    <ul class="list-unstyled d-flex align-items-center">
                         <AppMenu v-for="menu in store.menus" :key="menu" :menu="menu" />
-
                     </ul>
                 </div>
             </div>
             <div class="col-2">
-                <div class="content-counter text-light d-flex">
-                    <i class="bi bi-basket"></i>
-                    <p class="counter">0</p>
-
+                <div class="content-counter text-light d-flex align-items-center justify-content-end">
+                    <i class="fa-solid fa-basket-shopping me-2"></i>
+                    <p class="counter mb-0">0</p>
                 </div>
             </div>
         </div>
     </div>
+
 </template>
 
 <style lang="scss" scoped>
@@ -99,8 +97,8 @@ export default {
     background-color: transparent;
     color: #fff;
     width: 200px;
-    border-top: 1px solid rgba(106, 104, 104, 0.388);
-    border-bottom: 1px solid rgba(106, 104, 104, 0.388);
+    border-top: 1px solid #182028;
+    border-bottom: 1px solid #182028;
     border-right: 0px;
     border-left: 0px;
 }
@@ -114,8 +112,8 @@ export default {
 
 .counter {
     position: absolute;
-    top: -10px;
-    right: -5px;
+    top: -15px;
+    right: 5px;
     background-color: #13BE13;
     color: white;
     border-radius: 50%;
@@ -140,6 +138,7 @@ i:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .fa-facebook-f {
@@ -148,6 +147,8 @@ i:hover {
 
 .fa-facebook-f:hover {
     background-color: #4267B2;
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
 }
 
 .fa-twitter {
@@ -156,6 +157,8 @@ i:hover {
 
 .fa-twitter:hover {
     background-color: #1DA1F2;
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
 }
 
 .fa-linkedin-in {
@@ -164,6 +167,8 @@ i:hover {
 
 .fa-linkedin-in:hover {
     background-color: #0A66C2;
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
 
 }
 
@@ -173,7 +178,8 @@ i:hover {
 
 .fa-instagram:hover {
     background-color: #FD1D1D;
-
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
 }
 
 .fa-google-plus-g {
@@ -182,5 +188,7 @@ i:hover {
 
 .fa-google-plus-g:hover {
     background-color: #db4a39;
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
 }
 </style>
