@@ -64,7 +64,7 @@ export default {
             <div class="col-10">
                 <div class="content text-light">
                     <ul class="list-unstyled d-flex align-items-center">
-                        <AppMenu v-for="menu in store.menus" :key="menu" :menu="menu" />
+                        <AppMenu v-for="(menu, index) in store.menus" :key="index" :menu="menu" />
                     </ul>
                 </div>
             </div>

@@ -3,39 +3,28 @@
 import { store } from '../../store.js';
 
 export default {
-    setup() {
-        return { store };
+    props: {
+        menu: Object,
     }
+
 };
 </script>
 
 <template>
-    <div class="menu-container">
-        <ul class="nav">
-            <li v-for="menu in store.menus" :key="menu.title" class="nav-item dropdown">
-                <a v-if="menu.dropdown" href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    {{ menu.title }}
-                    <i class="bi bi-caret-down-fill align-middle"></i>
-                </a>
-                <a v-else href="#" class="nav-link">
-                    {{ menu.title }}
-                </a>
-                <ul v-if="menu.dropdown" class="dropdown-menu">
-                    <li v-for="item in menu.dropdown" :key="item" class="dropdown-item">
-                        {{ item }}
-                    </li>
-                </ul>
+    <div class="dropdown">
+        <a class="nav-link" :class="{ 'dropdown-toggle': menu.dropdowns }" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            {{ menu.title }}
+        </a>
+        <ul v-if="menu.dropdowns" class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li v-for="(dropdown, index) in menu.dropdowns" :key="index">
+                <a class="dropdown-item" href="#">{{ dropdown }}</a>
             </li>
         </ul>
     </div>
 </template>
 
 <style scoped>
-.menu-container {
-    padding: 10px;
-}
-
 .nav-item {
     position: relative;
 }
@@ -55,6 +44,7 @@ export default {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
+
 .dropdown-item {
     color: #fff;
     padding: 0.5rem 1rem;
@@ -63,9 +53,10 @@ export default {
 .dropdown-item:hover {
     background-color: #13be13;
     color: #fff;
+    cursor: pointer;
 }
 
-.bi-caret-down-fill {
-    margin-left: 0.5rem;
+.dropdown {
+    cursor: pointer;
 }
 </style>
