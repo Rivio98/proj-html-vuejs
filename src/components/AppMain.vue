@@ -4,6 +4,7 @@ import VideoPlayer from './microcomponents/VideoPlayer.vue';
 import Jumbotron2 from './microcomponents/Jumbotron-2.vue';
 import Card1 from './microcomponents/Card-1.vue';
 import Card2 from './microcomponents/Card-2.vue';
+import Card3 from './microcomponents/Card-3.vue';
 
 export default {
     components: {
@@ -11,7 +12,8 @@ export default {
         Card1,
         VideoPlayer,
         Jumbotron2,
-        Card2
+        Card2,
+        Card3
 
     },
 }
@@ -22,6 +24,7 @@ export default {
     <VideoPlayer />
     <Jumbotron2 />
     <Card2 />
+    <Card3 />
 </template>
 
 <style lang="">

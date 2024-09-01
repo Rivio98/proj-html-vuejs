@@ -5,7 +5,41 @@ export default {
 </script>
 <template>
     <div class="container">
-        <!-- Existing code here -->
+        <div class="row pt-5">
+            <div class="col-12">
+                <div class="content text-light d-flex justify-content-between">
+                    <div class="d-flex justify-content-between w-100">
+                        <div class="ps-3 pb-2 b-green">
+                            <h3>New Movie</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni aut at
+                                perferendis
+                                corrupti
+                                ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu text-light pt-5 mt-5">
+            <ul class="list-unstyled d-flex">
+                <li class="px-2">
+                    <h4 class="txt-green">All</h4>
+                </li>
+                <li class="px-2">
+                    <h4>Cooming Soon</h4>
+                </li>
+                <li class="px-2">
+                    <h4>Latest Movie</h4>
+                </li>
+                <li class="px-2">
+                    <h4>Top Rating</h4>
+                </li>
+                <li class="px-2">
+                    <h4>TV Series</h4>
+                </li>
+            </ul>
+        </div>
         <div class="row row-cols-3 mt-100 flex-wrap">
             <div class="col py-3 px-3">
                 <div class="cd">
@@ -279,6 +313,7 @@ export default {
     color: white;
     background-color: #060F19;
     padding: 5px 15px;
+    margin-bottom: 15px;
 }
 
 .label-left {
