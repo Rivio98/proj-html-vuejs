@@ -373,4 +373,8 @@ export default {
     display: none;
     font-size: 50px;
 }
+
+ul li:hover {
+    cursor: pointer;
+}
 </style>
