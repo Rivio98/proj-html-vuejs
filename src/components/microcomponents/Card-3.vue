@@ -5,9 +5,25 @@ export default {
 </script>
 <template>
     <div class="container">
+        <div class="row pt-5">
+            <div class="col-12">
+                <div class="content text-light d-flex justify-content-between">
+                    <div class="d-flex justify-content-between w-100">
+                        <div class="ps-3 pb-2 b-green">
+                            <h3>New Movie</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni aut at
+                                perferendis
+                                corrupti
+                                ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row mt-100 flex-wrap">
             <div class="col-6">
-                <div class="col py-3 px-3">
+                <div class="col py-2">
                     <div class="cd">
                         <div class="image-wrapper">
                             <img src="../../assets/blog-570x570.jpg" alt="Movie Image">
@@ -32,8 +48,8 @@ export default {
                 </div>
             </div>
             <div class="col-6">
-                <div class="row row-cols-2 pt-20">
-                    <div class="col py-1 px-3">
+                <div class="row row-cols-2">
+                    <div class="col py-3 px-3">
                         <div class="cd">
                             <div class="image-wrapper">
                                 <img src="../../assets/blog2-300x300.jpg" alt="Movie Image">
@@ -56,7 +72,7 @@ export default {
                             </div>
                         </div>
                     </div>
-                    <div class="col py-1 px-3">
+                    <div class="col py-3 px-3">
                         <div class="cd">
                             <div class="image-wrapper">
                                 <img src="../../assets/blog3-300x300.jpg" alt="Movie Image">
@@ -81,7 +97,7 @@ export default {
                     </div>
                 </div>
                 <div class="row row-cols-2">
-                    <div class="col py-1 px-3">
+                    <div class="col py-3 px-3">
                         <div class="cd">
                             <div class="image-wrapper">
                                 <img src="../../assets/blog4-300x300.jpg" alt=" Movie Image">
@@ -104,7 +120,7 @@ export default {
                             </div>
                         </div>
                     </div>
-                    <div class="col py-1 px-3">
+                    <div class="col py-3 px-3">
                         <div class="cd">
                             <div class="image-wrapper">
                                 <img src="../../assets/blog5-300x300.jpg" alt="Movie Image">
